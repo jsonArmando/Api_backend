@@ -68,7 +68,7 @@ public class TwitterController {
     }
 
     @GetMapping("/get/{id}")
-    private ResponseEntity<PortafolioVo> getPersona(@PathVariable("id") int id){
+    private ResponseEntity<PortafolioVo> getPortafolio(@PathVariable("id") int id){
         return ResponseEntity.ok(portafolioService.getPortafolioById(id));
     }
 
